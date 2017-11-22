@@ -82,7 +82,7 @@ open class ExpandableTextView: UITextView {
         }
     }
     
-    override func setContentOffset(_ contentOffset: CGPoint, animated: Bool) {
+    override open func setContentOffset(_ contentOffset: CGPoint, animated: Bool) {
         super.setContentOffset(contentOffset, animated: false)
     }
 
