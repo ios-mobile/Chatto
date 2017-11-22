@@ -81,6 +81,10 @@ open class ExpandableTextView: UITextView {
             self.configurePlaceholder()
         }
     }
+    
+    override func setContentOffset(_ contentOffset: CGPoint, animated: Bool) {
+        super.setContentOffset(contentOffset, animated: false)
+    }
 
     open func setTextPlaceholder(_ textPlaceholder: String) {
         self.placeholder.text = textPlaceholder
